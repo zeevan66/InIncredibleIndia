@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Incredible India - Tourism Platform</title>
+  <style>
+    :root {
+  /* Primitive Color Tokens */
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+
+  --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-16) var(--space-24);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: var(--space-24);
+  list-style: none;
+}
+
+.navbar-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-8) var(--space-12);
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast);
+  cursor: pointer;
+}
+
+.navbar-link:hover,
+.navbar-link.active {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--color-bg-1) 0%, var(--color-bg-3) 100%);
+  padding: 80px var(--space-24) 60px;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-32);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: var(--space-16);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-32);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--duration-normal);
+  border: none;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+}
+
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  background: var(--color-secondary-hover);
+}
+
+.btn-lg {
+  padding: var(--space-16) var(--space-32);
+  font-size: var(--font-size-lg);
+}
+
+/* Container */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-32) var(--space-24);
+}
+
+/* Page Sections */
+.page-section {
+  display: none;
+}
+
+.page-section.active {
+  display: block;
+}
+
+/* Visa Checker */
+.visa-checker {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-32);
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: var(--shadow-md);
+}
+
+.visa-checker h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-16);
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: var(--space-20);
+}
+
+.form-label {
+  display: block;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-8);
+  color: var(--color-text);
+}
+
+.form-control {
+  width: 100%;
+  padding: var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.form-control:focus {
+  outline: var(--focus-outline);
+  border-color: var(--color-primary);
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-24);
+  margin-top: var(--space-32);
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-16);
+}
+
+.card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+}
+
+.card-subtitle {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-8);
+}
+
+.verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  background-color: var(--color-bg-3);
+  color: var(--color-success);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.stars {
+  color: #FFB800;
+}
+
+.rating-count {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.tag {
+  background-color: var(--color-bg-1);
+  color: var(--color-text);
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+}
+
+.price {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-top: var(--space-16);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  overflow-y: auto;
+  padding: var(--space-24);
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header {
+  padding: var(--space-24);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  padding: var(--space-4);
+}
+
+.modal-body {
+  padding: var(--space-24);
+}
+
+.modal-footer {
+  padding: var(--space-24);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  gap: var(--space-12);
+  justify-content: flex-end;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-32);
+  padding: 0 var(--space-16);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+  flex: 1;
+  position: relative;
+}
+
+.step::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-border);
+  z-index: -1;
+}
+
+.step:last-child::after {
+  display: none;
+}
+
+.step-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-semibold);
+  border: 2px solid var(--color-border);
+}
+
+.step.active .step-number {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-primary);
+}
+
+.step.completed .step-number {
+  background-color: var(--color-success);
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-success);
+}
+
+.step-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-align: center;
+}
+
+.step.active .step-label {
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.step-content {
+  display: none;
+}
+
+.step-content.active {
+  display: block;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 80px;
+  right: var(--space-24);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16) var(--space-24);
+  box-shadow: var(--shadow-lg);
+  z-index: 3000;
+  display: none;
+  min-width: 300px;
+}
+
+.toast.show {
+  display: block;
+  animation: slideIn 0.3s ease-out;
+}
+
+.toast.success {
+  border-left: 4px solid var(--color-success);
+}
+
+.toast.error {
+  border-left: 4px solid var(--color-error);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: var(--space-12);
+  margin-bottom: var(--space-32);
+}
+
+.search-input {
+  flex: 1;
+  padding: var(--space-12) var(--space-16);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-base);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+/* Info Box */
+.info-box {
+  background-color: var(--color-bg-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin-bottom: var(--space-20);
+}
+
+.info-box.success {
+  background-color: var(--color-bg-3);
+  border-color: var(--color-success);
+}
+
+.info-box.warning {
+  background-color: var(--color-bg-2);
+  border-color: var(--color-warning);
+}
+
+/* Payment Methods */
+.payment-methods {
+  display: grid;
+  gap: var(--space-12);
+}
+
+.payment-method {
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+}
+
+.payment-method:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-1);
+}
+
+.payment-method.selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg-1);
+}
+
+.payment-icon {
+  font-size: 24px;
+}
+
+/* Calendar */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-16);
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  transition: all var(--duration-fast);
+}
+
+.calendar-day:hover:not(.disabled) {
+  background-color: var(--color-secondary);
+  border-color: var(--color-primary);
+}
+
+.calendar-day.selected {
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-primary);
+}
+
+.calendar-day.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.calendar-day.booked {
+  background-color: var(--color-bg-4);
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+/* Dashboard */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-24);
+  margin-top: var(--space-24);
+}
+
+.booking-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-20);
+  box-shadow: var(--shadow-sm);
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: var(--space-16);
+}
+
+.booking-status {
+  display: inline-block;
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.booking-status.upcoming {
+  background-color: var(--color-bg-1);
+  color: var(--color-primary);
+}
+
+.booking-status.completed {
+  background-color: var(--color-bg-3);
+  color: var(--color-success);
+}
+
+.booking-detail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  margin-bottom: var(--space-8);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Visa Page */
+.visa-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.visa-section {
+  margin-bottom: var(--space-32);
+}
+
+.visa-section h2 {
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-16);
+}
+
+.visa-section h3 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-12);
+  margin-top: var(--space-20);
+}
+
+.visa-types {
+  display: grid;
+  gap: var(--space-16);
+}
+
+.visa-type-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-20);
+}
+
+.entry-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-12);
+  margin-top: var(--space-16);
+}
+
+.entry-point {
+  background-color: var(--color-bg-1);
+  padding: var(--space-12);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-sm);
+}
+
+.faq-item {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-base);
+  padding: var(--space-16);
+  margin-bottom: var(--space-12);
+}
+
+.faq-question {
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-8);
+}
+
+.faq-answer {
+  color: var(--color-text-secondary);
+}
+
+/* Loading Spinner */
+.spinner {
+  border: 3px solid var(--color-secondary);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-secondary { color: var(--color-text-secondary); }
+.mb-16 { margin-bottom: var(--space-16); }
+.mb-24 { margin-bottom: var(--space-24); }
+.mt-16 { margin-top: var(--space-16); }
+.mt-24 { margin-top: var(--space-24); }
+.hidden { display: none; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .hero-ctas {
+    flex-direction: column;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps {
+    flex-direction: column;
+    gap: var(--space-16);
+  }
+  
+  .step::after {
+    display: none;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-brand" onclick="navigateTo('home')">🇮🇳 Incredible India</a>
+      <ul class="navbar-menu">
+        <li><a class="navbar-link active" onclick="navigateTo('home')">Home</a></li>
+        <li><a class="navbar-link" onclick="navigateTo('guides')">Browse Guides</a></li>
+        <li><a class="navbar-link" onclick="navigateTo('visa')">Visa Info</a></li>
+        <li><a class="navbar-link" onclick="navigateTo('dashboard')">My Bookings</a></li>
+        <li><a class="navbar-link" onclick="navigateTo('translator')">Translator</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Home Page -->
+  <div id="home" class="page-section active">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Explore Incredible India</h1>
+      <p class="hero-subtitle">Discover the magic of India with local expert guides. From the Taj Mahal to Kerala backwaters, create unforgettable memories.</p>
+      <div class="hero-ctas">
+        <button class="btn btn-primary btn-lg" onclick="navigateTo('guides')">Find Local Guide</button>
+        <button class="btn btn-secondary btn-lg" onclick="navigateTo('visa')">Apply for e-Visa</button>
+        <button class="btn btn-secondary btn-lg" onclick="showRequestTourModal()">Plan Custom Trip</button>
+      </div>
+    </section>
+
+    <!-- Visa Checker -->
+    <div class="visa-checker">
+      <h2>Quick Visa Check</h2>
+      <div class="form-group">
+        <label class="form-label" for="country-select">Select Your Country</label>
+        <select id="country-select" class="form-control" onchange="checkVisa()">
+          <option value="">-- Choose Country --</option>
+          <option value="USA">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <option value="Japan">Japan</option>
+          <option value="China">China</option>
+        </select>
+      </div>
+      <div id="visa-result" class="info-box success hidden">
+        <div id="visa-info"></div>
+      </div>
+    </div>
+
+    <!-- Featured Destinations -->
+    <div class="container">
+      <h2 class="text-center mb-24">Featured Destinations</h2>
+      <div class="card-grid">
+        <div class="card" onclick="searchGuides('Delhi')">
+          <h3>Delhi</h3>
+          <p class="text-secondary">Capital city with rich Mughal heritage, monuments, and vibrant markets</p>
+        </div>
+        <div class="card" onclick="searchGuides('Agra')">
+          <h3>Agra</h3>
+          <p class="text-secondary">Home to the iconic Taj Mahal and Mughal architecture</p>
+        </div>
+        <div class="card" onclick="searchGuides('Jaipur')">
+          <h3>Jaipur</h3>
+          <p class="text-secondary">The Pink City with royal palaces and majestic forts</p>
+        </div>
+        <div class="card" onclick="searchGuides('Kerala')">
+          <h3>Kerala</h3>
+          <p class="text-secondary">God's Own Country with serene backwaters and beaches</p>
+        </div>
+        <div class="card" onclick="searchGuides('Varanasi')">
+          <h3>Varanasi</h3>
+          <p class="text-secondary">Spiritual capital on the banks of the holy Ganges</p>
+        </div>
+        <div class="card" onclick="searchGuides('Goa')">
+          <h3>Goa</h3>
+          <p class="text-secondary">Beach paradise with Portuguese heritage</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Visa Information Page -->
+  <div id="visa" class="page-section">
+    <div class="container visa-content">
+      <h1 class="mb-24">India e-Visa Information</h1>
+      
+      <div class="info-box warning">
+        <strong>⚠️ Important:</strong> Apply at least 4 days before your intended travel date. e-Visas are available for 169 countries.
+      </div>
+
+      <div class="visa-section">
+        <h2>What is India e-Visa?</h2>
+        <p>India e-Visa is an electronic travel authorization that allows eligible foreign nationals to enter India for tourism, business, or medical purposes. The entire application process is online.</p>
+      </div>
+
+      <div class="visa-section">
+        <h2>Step-by-Step Application Process</h2>
+        <div class="visa-types">
+          <div class="visa-type-card">
+            <strong>Step 1: Prepare Documents</strong>
+            <ul>
+              <li>Passport (valid for 6 months from arrival date)</li>
+              <li>Recent passport-size photograph</li>
+              <li>Scanned copy of passport bio page</li>
+              <li>Payment method (credit/debit card)</li>
+            </ul>
+          </div>
+          <div class="visa-type-card">
+            <strong>Step 2: Fill Online Application</strong>
+            <ul>
+              <li>Visit official Indian visa portal</li>
+              <li>Complete application form</li>
+              <li>Upload documents</li>
+              <li>Double-check all information</li>
+            </ul>
+          </div>
+          <div class="visa-type-card">
+            <strong>Step 3: Pay Visa Fee</strong>
+            <ul>
+              <li>Fee varies by nationality ($25-$100)</li>
+              <li>Pay online via card</li>
+              <li>Save payment receipt</li>
+            </ul>
+          </div>
+          <div class="visa-type-card">
+            <strong>Step 4: Receive e-Visa</strong>
+            <ul>
+              <li>Processing time: 3-5 days</li>
+              <li>e-Visa sent via email</li>
+              <li>Print copy for travel</li>
+              <li>Present at immigration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="visa-section">
+        <h2>Visa Types &amp; Validity</h2>
+        <div class="visa-types">
+          <div class="visa-type-card">
+            <h3>e-Tourist Visa (30 days)</h3>
+            <p><strong>Validity:</strong> 30 days from arrival</p>
+            <p><strong>Entries:</strong> Double entry</p>
+            <p><strong>Best for:</strong> Short trips</p>
+          </div>
+          <div class="visa-type-card">
+            <h3>e-Tourist Visa (1 year)</h3>
+            <p><strong>Validity:</strong> 365 days from issue</p>
+            <p><strong>Entries:</strong> Multiple entry</p>
+            <p><strong>Stay:</strong> 90 days per visit</p>
+          </div>
+          <div class="visa-type-card">
+            <h3>e-Tourist Visa (5 years)</h3>
+            <p><strong>Validity:</strong> 5 years from issue</p>
+            <p><strong>Entries:</strong> Multiple entry</p>
+            <p><strong>Stay:</strong> 90 days per visit</p>
+          </div>
+          <div class="visa-type-card">
+            <h3>e-Medical Visa</h3>
+            <p><strong>Validity:</strong> 120 days</p>
+            <p><strong>Entries:</strong> Triple entry</p>
+            <p><strong>Purpose:</strong> Medical treatment</p>
+          </div>
+          <div class="visa-type-card">
+            <h3>e-Business Visa</h3>
+            <p><strong>Validity:</strong> 365 days</p>
+            <p><strong>Entries:</strong> Multiple entry</p>
+            <p><strong>Stay:</strong> 180 days per visit</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="visa-section">
+        <h2>Designated Entry Points</h2>
+        <h3>Airports (25)</h3>
+        <div class="entry-points">
+          <div class="entry-point">Delhi (DEL)</div>
+          <div class="entry-point">Mumbai (BOM)</div>
+          <div class="entry-point">Chennai (MAA)</div>
+          <div class="entry-point">Kolkata (CCU)</div>
+          <div class="entry-point">Bangalore (BLR)</div>
+          <div class="entry-point">Hyderabad (HYD)</div>
+          <div class="entry-point">Cochin (COK)</div>
+          <div class="entry-point">Goa (GOI)</div>
+          <div class="entry-point">Ahmedabad (AMD)</div>
+          <div class="entry-point">Amritsar (ATQ)</div>
+          <div class="entry-point">Lucknow (LKO)</div>
+          <div class="entry-point">Jaipur (JAI)</div>
+          <div class="entry-point">Gaya (GAY)</div>
+          <div class="entry-point">Varanasi (VNS)</div>
+          <div class="entry-point">Calicut (CCJ)</div>
+        </div>
+        
+        <h3 class="mt-24">Seaports (5)</h3>
+        <div class="entry-points">
+          <div class="entry-point">Mumbai Seaport</div>
+          <div class="entry-point">Cochin Seaport</div>
+          <div class="entry-point">Mangalore Seaport</div>
+          <div class="entry-point">Chennai Seaport</div>
+          <div class="entry-point">Goa Seaport</div>
+        </div>
+      </div>
+
+      <div class="visa-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="visa-types">
+          <div class="faq-item">
+            <div class="faq-question">How long does it take to get an e-Visa?</div>
+            <div class="faq-answer">Typically 3-5 business days. We recommend applying at least 4 days before travel, but you can apply up to 120 days in advance.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I extend my e-Visa?</div>
+            <div class="faq-answer">e-Tourist Visas cannot be extended. You must exit India before the visa expires.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">What if my e-Visa application is rejected?</div>
+            <div class="faq-answer">You can reapply after correcting the errors. Alternatively, apply for a regular visa at an Indian embassy/consulate.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Do I need to print my e-Visa?</div>
+            <div class="faq-answer">Yes, carry a printed copy of your e-Visa when traveling to India. Immigration officials may request it.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-24">
+        <a href="https://indianvisaonline.gov.in/evisa/" target="_blank" class="btn btn-primary btn-lg">Apply on Official Portal →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Browse Guides Page -->
+  <div id="guides" class="page-section">
+    <div class="container">
+      <h1 class="mb-24">Browse Local Guides</h1>
+      
+      <div class="search-bar">
+        <input type="text" id="search-guides" class="search-input" placeholder="Search by city, language, or expertise..." oninput="filterGuides()">
+        <select class="form-control" style="max-width: 200px;" onchange="filterGuidesByCity(this.value)">
+          <option value="">All Cities</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Agra">Agra</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Varanasi">Varanasi</option>
+          <option value="Goa">Goa</option>
+        </select>
+      </div>
+
+      <div id="guides-grid" class="card-grid"></div>
+    </div>
+  </div>
+
+  <!-- Guide Profile Page -->
+  <div id="guide-profile" class="page-section">
+    <div class="container" style="max-width: 900px;">
+      <button class="btn btn-secondary mb-24" onclick="navigateTo('guides')">← Back to Guides</button>
+      <div id="guide-profile-content"></div>
+    </div>
+  </div>
+
+  <!-- Dashboard Page -->
+  <div id="dashboard" class="page-section">
+    <div class="container">
+      <h1 class="mb-24">My Bookings</h1>
+      
+      <div id="bookings-container">
+        <div id="upcoming-bookings">
+          <h2 class="mb-16">Upcoming Tours</h2>
+          <div id="upcoming-bookings-grid" class="dashboard-grid"></div>
+        </div>
+        
+        <div id="past-bookings" class="mt-24">
+          <h2 class="mb-16">Past Tours</h2>
+          <div id="past-bookings-grid" class="dashboard-grid"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Voice Translator Page -->
+  <div id="translator" class="page-section">
+    <div class="container" style="max-width: 700px;">
+      <h1 class="mb-24 text-center">Voice Translator</h1>
+      
+      <div class="card" style="padding: var(--space-32);">
+        <div class="form-group">
+          <label class="form-label">Select Language</label>
+          <select id="translator-lang" class="form-control">
+            <option value="hi">Hindi</option>
+            <option value="ta">Tamil</option>
+            <option value="te">Telugu</option>
+            <option value="bn">Bengali</option>
+            <option value="mr">Marathi</option>
+            <option value="gu">Gujarati</option>
+            <option value="kn">Kannada</option>
+            <option value="ml">Malayalam</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label">Enter Text or Phrase</label>
+          <textarea id="translator-input" class="form-control" rows="4" placeholder="e.g., Where is the nearest restaurant?"></textarea>
+        </div>
+        
+        <button class="btn btn-primary" style="width: 100%; margin-bottom: var(--space-16);" onclick="translateText()">Translate</button>
+        
+        <div id="translation-result" class="info-box hidden">
+          <strong>Translation:</strong>
+          <div id="translation-text" style="font-size: var(--font-size-xl); margin-top: var(--space-12);"></div>
+        </div>
+        
+        <div class="mt-24">
+          <h3 class="mb-16">Common Phrases</h3>
+          <div class="tag-list">
+            <span class="tag" onclick="setPhrase('Hello')">Hello</span>
+            <span class="tag" onclick="setPhrase('Thank you')">Thank you</span>
+            <span class="tag" onclick="setPhrase('How much?')">How much?</span>
+            <span class="tag" onclick="setPhrase('Where is the bathroom?')">Bathroom?</span>
+            <span class="tag" onclick="setPhrase('I need help')">Help</span>
+            <span class="tag" onclick="setPhrase('Delicious food')">Delicious</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Modal -->
+  <div id="booking-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Book Your Tour</h2>
+        <button class="modal-close" onclick="closeBookingModal()">×</button>
+      </div>
+      
+      <div class="modal-body">
+        <!-- Steps Indicator -->
+        <div class="steps">
+          <div class="step active" id="step-indicator-1">
+            <div class="step-number">1</div>
+            <div class="step-label">Date &amp; Time</div>
+          </div>
+          <div class="step" id="step-indicator-2">
+            <div class="step-number">2</div>
+            <div class="step-label">Details</div>
+          </div>
+          <div class="step" id="step-indicator-3">
+            <div class="step-number">3</div>
+            <div class="step-label">Payment</div>
+          </div>
+          <div class="step" id="step-indicator-4">
+            <div class="step-number">4</div>
+            <div class="step-label">Confirmation</div>
+          </div>
+        </div>
+
+        <!-- Step 1: Date & Time -->
+        <div id="booking-step-1" class="step-content active">
+          <div class="form-group">
+            <label class="form-label">Select Date</label>
+            <input type="date" id="booking-date" class="form-control" onchange="calculatePrice()">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Duration</label>
+            <select id="booking-duration" class="form-control" onchange="calculatePrice()">
+              <option value="2">2 hours</option>
+              <option value="4">4 hours (Half Day)</option>
+              <option value="8">8 hours (Full Day)</option>
+              <option value="custom">Custom</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Number of People</label>
+            <input type="number" id="booking-people" class="form-control" value="1" min="1" max="15" onchange="calculatePrice()">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Special Requirements (Optional)</label>
+            <textarea id="booking-requirements" class="form-control" rows="3" placeholder="Any specific places you want to visit or requirements..."></textarea>
+          </div>
+          
+          <div class="info-box">
+            <strong>Estimated Cost:</strong>
+            <div id="price-estimate" style="font-size: var(--font-size-2xl); color: var(--color-primary); margin-top: var(--space-8);">₹0</div>
+          </div>
+        </div>
+
+        <!-- Step 2: Personal Details -->
+        <div id="booking-step-2" class="step-content">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" id="booking-name" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Email *</label>
+            <input type="email" id="booking-email" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" id="booking-phone" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Nationality *</label>
+            <input type="text" id="booking-nationality" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Hotel / Pickup Location *</label>
+            <input type="text" id="booking-location" class="form-control" placeholder="Hotel name or address" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">Preferred Language</label>
+            <select id="booking-language" class="form-control">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="French">French</option>
+              <option value="Spanish">Spanish</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Step 3: Payment -->
+        <div id="booking-step-3" class="step-content">
+          <div class="info-box">
+            <h3>Payment Summary</h3>
+            <div style="margin-top: var(--space-12);">
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-8);">
+                <span>Guide Rate:</span>
+                <span id="payment-rate">₹0/hour</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-8);">
+                <span>Duration:</span>
+                <span id="payment-duration">0 hours</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-8);">
+                <span>Number of People:</span>
+                <span id="payment-people">0</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-top: var(--space-16); padding-top: var(--space-16); border-top: 2px solid var(--color-border); font-size: var(--font-size-xl); font-weight: var(--font-weight-bold);">
+                <span>Total:</span>
+                <span style="color: var(--color-primary);" id="payment-total">₹0</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-group mt-24">
+            <label class="form-label">Select Payment Method</label>
+            <div class="payment-methods">
+              <div class="payment-method" onclick="selectPayment('upi')">
+                <div class="payment-icon">📱</div>
+                <div>
+                  <div style="font-weight: var(--font-weight-semibold);">UPI</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">GPay, PhonePe, Paytm</div>
+                </div>
+              </div>
+              
+              <div class="payment-method" onclick="selectPayment('card')">
+                <div class="payment-icon">💳</div>
+                <div>
+                  <div style="font-weight: var(--font-weight-semibold);">Credit/Debit Card</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">Visa, Mastercard, RuPay, Amex</div>
+                </div>
+              </div>
+              
+              <div class="payment-method" onclick="selectPayment('netbanking')">
+                <div class="payment-icon">🏦</div>
+                <div>
+                  <div style="font-weight: var(--font-weight-semibold);">Net Banking</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">SBI, HDFC, ICICI, Axis</div>
+                </div>
+              </div>
+              
+              <div class="payment-method" onclick="selectPayment('paypal')">
+                <div class="payment-icon">🌍</div>
+                <div>
+                  <div style="font-weight: var(--font-weight-semibold);">PayPal</div>
+                  <div style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">International payments</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="info-box success mt-16">
+            <div style="display: flex; gap: var(--space-8); align-items: center;">
+              <span style="font-size: 20px;">🔒</span>
+              <span>Secure payment • SSL encrypted • PCI compliant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Confirmation -->
+        <div id="booking-step-4" class="step-content">
+          <div class="text-center">
+            <div style="font-size: 60px; margin-bottom: var(--space-16);">✅</div>
+            <h2>Booking Confirmed!</h2>
+            <p class="text-secondary mb-24">Your tour has been successfully booked</p>
+            
+            <div class="info-box success" style="text-align: left;">
+              <div style="margin-bottom: var(--space-16);">
+                <strong>Booking Reference:</strong>
+                <div id="booking-reference" style="font-size: var(--font-size-2xl); font-family: monospace; color: var(--color-primary); margin-top: var(--space-4);"></div>
+              </div>
+              
+              <div style="margin-bottom: var(--space-12);">
+                <strong>Guide:</strong> <span id="confirmation-guide"></span>
+              </div>
+              <div style="margin-bottom: var(--space-12);">
+                <strong>Date:</strong> <span id="confirmation-date"></span>
+              </div>
+              <div style="margin-bottom: var(--space-12);">
+                <strong>Duration:</strong> <span id="confirmation-duration"></span>
+              </div>
+              <div style="margin-bottom: var(--space-12);">
+                <strong>Total Paid:</strong> <span id="confirmation-total" style="color: var(--color-primary); font-weight: var(--font-weight-semibold);"></span>
+              </div>
+            </div>
+            
+            <div class="info-box mt-16">
+              <p>📧 Confirmation email sent to <span id="confirmation-email"></span></p>
+              <p class="mt-16">Your guide will contact you 24 hours before the tour to confirm pickup details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-footer">
+        <button id="modal-back-btn" class="btn btn-secondary" onclick="previousBookingStep()" style="display: none;">Back</button>
+        <button id="modal-next-btn" class="btn btn-primary" onclick="nextBookingStep()">Next</button>
+        <button id="modal-pay-btn" class="btn btn-primary" onclick="processPayment()" style="display: none;">Pay Now</button>
+        <button id="modal-done-btn" class="btn btn-primary" onclick="closeBookingModal(); navigateTo('dashboard');" style="display: none;">View My Bookings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Tour Request Modal -->
+  <div id="tour-request-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Request Custom Tour</h2>
+        <button class="modal-close" onclick="closeTourRequestModal()">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">Name *</label>
+          <input type="text" id="tour-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email *</label>
+          <input type="email" id="tour-email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Cities</label>
+          <input type="text" id="tour-cities" class="form-control" placeholder="e.g., Delhi, Agra, Jaipur">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Number of Days</label>
+          <input type="number" id="tour-days" class="form-control" value="3" min="1">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Number of People</label>
+          <input type="number" id="tour-people" class="form-control" value="2" min="1">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Budget (₹)</label>
+          <input type="number" id="tour-budget" class="form-control" placeholder="Approximate budget">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tour Details &amp; Preferences</label>
+          <textarea id="tour-details" class="form-control" rows="4" placeholder="Tell us about your interests, must-see places, accommodation preferences, etc."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeTourRequestModal()">Cancel</button>
+        <button class="btn btn-primary" onclick="submitTourRequest()">Submit Request</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Data
+    const guides = [
+      {
+        id: 1,
+        name: "Rajesh Kumar",
+        city: "Delhi",
+        languages: ["Hindi", "English", "Punjabi"],
+        expertise: "Historical monuments, Street food, Mughal heritage",
+        bio: "Delhi native with deep knowledge of India's capital! I specialize in Red Fort, Qutub Minar, Chandni Chowk food walks, and hidden gems of Old Delhi.",
+        hourly_rate: 1200,
+        rating: 4.8,
+        reviews_count: 156,
+        verified: true,
+        reviews: [
+          { name: "John Smith (USA)", rating: 5, comment: "Amazing tour! Rajesh's knowledge of Delhi's history is incredible. The food walk was the highlight!" },
+          { name: "Emma Wilson (UK)", rating: 5, comment: "Best guide ever! Very professional and friendly. Learned so much about Mughal architecture." },
+          { name: "Sophie Martin (France)", rating: 4, comment: "Great experience. Rajesh was punctual and accommodating to our schedule." }
+        ]
+      },
+      {
+        id: 2,
+        name: "Priya Sharma",
+        city: "Agra",
+        languages: ["Hindi", "English", "French"],
+        expertise: "Taj Mahal tours, Mughal architecture, Photography",
+        bio: "Agra is my home and the Taj Mahal is my pride! Sunrise/sunset tours, best photography spots.",
+        hourly_rate: 1500,
+        rating: 4.9,
+        reviews_count: 203,
+        verified: true,
+        reviews: [
+          { name: "David Chen (USA)", rating: 5, comment: "Priya made our Taj Mahal visit unforgettable. She knew all the best photo spots!" },
+          { name: "Maria Garcia (Spain)", rating: 5, comment: "Excellent guide! Her French was perfect and she was very knowledgeable." },
+          { name: "Tom Brown (Australia)", rating: 5, comment: "Highly recommend! Priya's passion for the Taj Mahal is contagious." }
+        ]
+      },
+      {
+        id: 3,
+        name: "Arjun Mehta",
+        city: "Jaipur",
+        languages: ["Hindi", "English", "Rajasthani"],
+        expertise: "Royal palaces, Forts, Traditional crafts",
+        bio: "Pink City expert! Amber Fort, City Palace, authentic Rajasthani experiences.",
+        hourly_rate: 1300,
+        rating: 4.7,
+        reviews_count: 142,
+        verified: true,
+        reviews: [
+          { name: "Lisa Anderson (Canada)", rating: 5, comment: "Arjun showed us the real Jaipur. The palace tour was magnificent!" },
+          { name: "James Wilson (UK)", rating: 4, comment: "Good guide with lots of local knowledge. Really enjoyed the craft markets." },
+          { name: "Anna Schmidt (Germany)", rating: 5, comment: "Wonderful experience! Arjun's stories about the royal families were fascinating." }
+        ]
+      },
+      {
+        id: 4,
+        name: "Ananya Iyer",
+        city: "Kerala",
+        languages: ["Malayalam", "English", "Tamil"],
+        expertise: "Backwaters, Ayurveda, Beach resorts",
+        bio: "God's Own Country awaits! Houseboat tours, Ayurvedic spas, Kerala cuisine.",
+        hourly_rate: 1400,
+        rating: 4.9,
+        reviews_count: 178,
+        verified: true,
+        reviews: [
+          { name: "Michael Johnson (USA)", rating: 5, comment: "Best experience in India! The houseboat tour was magical." },
+          { name: "Sarah Lee (Singapore)", rating: 5, comment: "Ananya is wonderful! She arranged everything perfectly for our Kerala trip." },
+          { name: "Robert Taylor (Australia)", rating: 5, comment: "Amazing guide! The Ayurvedic spa she recommended was incredible." }
+        ]
+      },
+      {
+        id: 5,
+        name: "Vikram Singh",
+        city: "Varanasi",
+        languages: ["Hindi", "English", "Bengali"],
+        expertise: "Spiritual tours, Ganga Aarti, Ancient temples",
+        bio: "Experience India's spiritual heart! Ganga Aarti, sunrise boat rides, temple tours.",
+        hourly_rate: 1100,
+        rating: 5.0,
+        reviews_count: 189,
+        verified: true,
+        reviews: [
+          { name: "Jennifer White (USA)", rating: 5, comment: "Life-changing experience! Vikram's spiritual insights were profound." },
+          { name: "Paolo Rossi (Italy)", rating: 5, comment: "Perfect guide for Varanasi. The Ganga Aarti at sunset was breathtaking." },
+          { name: "Emma Davies (UK)", rating: 5, comment: "Exceptional! Vikram made us feel the spiritual essence of Varanasi." }
+        ]
+      },
+      {
+        id: 6,
+        name: "Sofia D'Souza",
+        city: "Goa",
+        languages: ["English", "Konkani", "Portuguese"],
+        expertise: "Beach culture, Portuguese heritage, Water sports",
+        bio: "Goa paradise guide! Beaches, churches, spice plantations, water sports.",
+        hourly_rate: 1000,
+        rating: 4.8,
+        reviews_count: 167,
+        verified: true,
+        reviews: [
+          { name: "Chris Miller (USA)", rating: 5, comment: "Sofia knows every corner of Goa! Had an amazing time at the beaches." },
+          { name: "Laura Martinez (Spain)", rating: 5, comment: "Great guide! Her Portuguese heritage knowledge added so much to the tour." },
+          { name: "Mark Thompson (UK)", rating: 4, comment: "Enjoyed the water sports and beach hopping. Sofia was very helpful." }
+        ]
+      }
+    ];
+
+    const visaRequirements = {
+      'USA': { type: 'e-Visa available', validity: '10 years (multiple entry)', stay: '180 days per visit', fee: '$100 USD' },
+      'UK': { type: 'e-Visa available', validity: '5 years (multiple entry)', stay: '90 days per visit', fee: '£80 GBP' },
+      'Canada': { type: 'e-Visa available', validity: '10 years (multiple entry)', stay: '180 days per visit', fee: '$100 CAD' },
+      'Australia': { type: 'e-Visa available', validity: '1 year (multiple entry)', stay: '90 days per visit', fee: '$80 AUD' },
+      'Germany': { type: 'e-Visa available', validity: '1 year (multiple entry)', stay: '90 days per visit', fee: '€80 EUR' },
+      'France': { type: 'e-Visa available', validity: '1 year (multiple entry)', stay: '90 days per visit', fee: '€80 EUR' },
+      'Japan': { type: 'e-Visa available', validity: '1 year (multiple entry)', stay: '90 days per visit', fee: '¥8000 JPY' },
+      'China': { type: 'e-Visa available', validity: '1 year (multiple entry)', stay: '30 days per visit', fee: '$80 USD' }
+    };
+
+    // State
+    let currentPage = 'home';
+    let currentBookingStep = 1;
+    let selectedGuide = null;
+    let selectedPaymentMethod = null;
+    let bookings = [];
+
+    // Translation dictionary (simplified)
+    const translations = {
+      'Hello': { hi: 'नमस्ते', ta: 'வணக்கம்', te: 'నమస్కారం', bn: 'হ্যালো', mr: 'नमस्कार', gu: 'નમસ્તે', kn: 'ನಮಸ್ಕಾರ', ml: 'നമസ്കാരം' },
+      'Thank you': { hi: 'धन्यवाद', ta: 'நன்றி', te: 'ధన్యవాదాలు', bn: 'ধন্যবাদ', mr: 'धन्यवाद', gu: 'આભાર', kn: 'ಧನ್ಯವಾದ', ml: 'നന്ദി' },
+      'How much?': { hi: 'कितने का है?', ta: 'எவ்வளவு?', te: 'ఎంత?', bn: 'কত?', mr: 'किती?', gu: 'કેટલું?', kn: 'ಎಷ್ಟು?', ml: 'എത്ര?' },
+      'Where is the bathroom?': { hi: 'बाथरूम कहाँ है?', ta: 'குளியலறை எங்கே?', te: 'బాత్రూమ్ ఎక్కడ ఉంది?', bn: 'বাথরুম কোথায়?', mr: 'स्नानगृह कुठे आहे?', gu: 'બાથરૂમ ક્યાં છે?', kn: 'ಸ್ನಾನಗೃಹ ಎಲ್ಲಿದೆ?', ml: 'ബാത്ത്റൂം എവിടെയാണ്?' },
+      'I need help': { hi: 'मुझे मदद चाहिए', ta: 'எனக்கு உதவி வேண்டும்', te: 'నాకు సహాయం కావాలి', bn: 'আমার সাহায্য দরকার', mr: 'मला मदत हवी आहे', gu: 'મને મદદની જરૂર છે', kn: 'ನನಗೆ ಸಹಾಯ ಬೇಕು', ml: 'എനിക്ക് സഹായം വേണം' },
+      'Delicious food': { hi: 'स्वादिष्ट खाना', ta: 'ருசியான உணவு', te: 'రుచికరమైన ఆహారం', bn: 'সুস্বাদু খাবার', mr: 'चवदार अन्न', gu: 'સ્વાદિષ્ટ ખોરાક', kn: 'ರುಚಿಕರ ಆಹಾರ', ml: 'രുചികരമായ ഭക്ഷണം' }
+    };
+
+    // Initialize
+    function init() {
+      renderGuides();
+      updateNavbar();
+      setMinDate();
+    }
+
+    // Navigation
+    function navigateTo(page) {
+      document.querySelectorAll('.page-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(page).classList.add('active');
+      currentPage = page;
+      updateNavbar();
+      
+      if (page === 'dashboard') {
+        renderDashboard();
+      }
+    }
+
+    function updateNavbar() {
+      document.querySelectorAll('.navbar-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      const links = document.querySelectorAll('.navbar-link');
+      const pageMap = { 'home': 0, 'guides': 1, 'visa': 2, 'dashboard': 3, 'translator': 4 };
+      if (pageMap[currentPage] !== undefined) {
+        links[pageMap[currentPage]].classList.add('active');
+      }
+    }
+
+    // Visa Checker
+    function checkVisa() {
+      const country = document.getElementById('country-select').value;
+      const resultDiv = document.getElementById('visa-result');
+      const infoDiv = document.getElementById('visa-info');
+      
+      if (country && visaRequirements[country]) {
+        const visa = visaRequirements[country];
+        infoDiv.innerHTML = `
+          <h3 style="margin-bottom: var(--space-12);">✅ ${visa.type} for ${country}</h3>
+          <p><strong>Validity:</strong> ${visa.validity}</p>
+          <p><strong>Maximum Stay:</strong> ${visa.stay}</p>
+          <p><strong>Fee:</strong> ${visa.fee}</p>
+          <p style="margin-top: var(--space-16);"><a href="https://indianvisaonline.gov.in/evisa/" target="_blank" class="btn btn-primary">Apply Now →</a></p>
+        `;
+        resultDiv.classList.remove('hidden');
+      } else {
+        resultDiv.classList.add('hidden');
+      }
+    }
+
+    // Guides
+    function renderGuides() {
+      const grid = document.getElementById('guides-grid');
+      grid.innerHTML = guides.map(guide => `
+        <div class="card" onclick="viewGuideProfile(${guide.id})">
+          <div class="card-header">
+            <div>
+              <div class="card-title">${guide.name}</div>
+              <div class="card-subtitle">${guide.city}</div>
+            </div>
+            ${guide.verified ? '<span class="verified-badge">✓ Verified</span>' : ''}
+          </div>
+          <div class="rating">
+            <span class="stars">${'★'.repeat(Math.floor(guide.rating))}${'☆'.repeat(5 - Math.floor(guide.rating))}</span>
+            <span class="rating-count">${guide.rating} (${guide.reviews_count} reviews)</span>
+          </div>
+          <p class="text-secondary">${guide.bio}</p>
+          <div class="tag-list">
+            ${guide.languages.map(lang => `<span class="tag">${lang}</span>`).join('')}
+          </div>
+          <div class="price">₹${guide.hourly_rate}/hour</div>
+        </div>
+      `).join('');
+    }
+
+    function filterGuides() {
+      const searchTerm = document.getElementById('search-guides').value.toLowerCase();
+      const filtered = guides.filter(guide => 
+        guide.name.toLowerCase().includes(searchTerm) ||
+        guide.city.toLowerCase().includes(searchTerm) ||
+        guide.expertise.toLowerCase().includes(searchTerm) ||
+        guide.languages.some(lang => lang.toLowerCase().includes(searchTerm))
+      );
+      
+      const grid = document.getElementById('guides-grid');
+      grid.innerHTML = filtered.map(guide => `
+        <div class="card" onclick="viewGuideProfile(${guide.id})">
+          <div class="card-header">
+            <div>
+              <div class="card-title">${guide.name}</div>
+              <div class="card-subtitle">${guide.city}</div>
+            </div>
+            ${guide.verified ? '<span class="verified-badge">✓ Verified</span>' : ''}
+          </div>
+          <div class="rating">
+            <span class="stars">${'★'.repeat(Math.floor(guide.rating))}${'☆'.repeat(5 - Math.floor(guide.rating))}</span>
+            <span class="rating-count">${guide.rating} (${guide.reviews_count} reviews)</span>
+          </div>
+          <p class="text-secondary">${guide.bio}</p>
+          <div class="tag-list">
+            ${guide.languages.map(lang => `<span class="tag">${lang}</span>`).join('')}
+          </div>
+          <div class="price">₹${guide.hourly_rate}/hour</div>
+        </div>
+      `).join('');
+    }
+
+    function filterGuidesByCity(city) {
+      if (!city) {
+        renderGuides();
+        return;
+      }
+      
+      const filtered = guides.filter(guide => guide.city === city);
+      const grid = document.getElementById('guides-grid');
+      grid.innerHTML = filtered.map(guide => `
+        <div class="card" onclick="viewGuideProfile(${guide.id})">
+          <div class="card-header">
+            <div>
+              <div class="card-title">${guide.name}</div>
+              <div class="card-subtitle">${guide.city}</div>
+            </div>
+            ${guide.verified ? '<span class="verified-badge">✓ Verified</span>' : ''}
+          </div>
+          <div class="rating">
+            <span class="stars">${'★'.repeat(Math.floor(guide.rating))}${'☆'.repeat(5 - Math.floor(guide.rating))}</span>
+            <span class="rating-count">${guide.rating} (${guide.reviews_count} reviews)</span>
+          </div>
+          <p class="text-secondary">${guide.bio}</p>
+          <div class="tag-list">
+            ${guide.languages.map(lang => `<span class="tag">${lang}</span>`).join('')}
+          </div>
+          <div class="price">₹${guide.hourly_rate}/hour</div>
+        </div>
+      `).join('');
+    }
+
+    function searchGuides(city) {
+      navigateTo('guides');
+      setTimeout(() => {
+        filterGuidesByCity(city);
+      }, 100);
+    }
+
+    // Guide Profile
+    function viewGuideProfile(guideId) {
+      selectedGuide = guides.find(g => g.id === guideId);
+      if (!selectedGuide) return;
+      
+      const content = document.getElementById('guide-profile-content');
+      content.innerHTML = `
+        <div class="card" style="padding: var(--space-32);">
+          <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-24);">
+            <div>
+              <h1 style="margin-bottom: var(--space-8);">${selectedGuide.name}</h1>
+              <div class="card-subtitle" style="font-size: var(--font-size-lg); margin-bottom: var(--space-12);">${selectedGuide.city}</div>
+              ${selectedGuide.verified ? '<span class="verified-badge">✓ Verified Guide</span>' : ''}
+            </div>
+          </div>
+          
+          <div class="rating" style="margin-bottom: var(--space-24);">
+            <span class="stars" style="font-size: var(--font-size-2xl);">${'★'.repeat(Math.floor(selectedGuide.rating))}${'☆'.repeat(5 - Math.floor(selectedGuide.rating))}</span>
+            <span class="rating-count" style="font-size: var(--font-size-lg);">${selectedGuide.rating} (${selectedGuide.reviews_count} reviews)</span>
+          </div>
+          
+          <div style="margin-bottom: var(--space-24);">
+            <h3 style="margin-bottom: var(--space-12);">About</h3>
+            <p class="text-secondary">${selectedGuide.bio}</p>
+          </div>
+          
+          <div style="margin-bottom: var(--space-24);">
+            <h3 style="margin-bottom: var(--space-12);">Languages</h3>
+            <div class="tag-list">
+              ${selectedGuide.languages.map(lang => `<span class="tag">${lang}</span>`).join('')}
+            </div>
+          </div>
+          
+          <div style="margin-bottom: var(--space-24);">
+            <h3 style="margin-bottom: var(--space-12);">Expertise</h3>
+            <p class="text-secondary">${selectedGuide.expertise}</p>
+          </div>
+          
+          <div style="margin-bottom: var(--space-24);">
+            <h3 style="margin-bottom: var(--space-12);">Pricing</h3>
+            <div class="info-box">
+              <div style="font-size: var(--font-size-2xl); color: var(--color-primary); font-weight: var(--font-weight-bold); margin-bottom: var(--space-12);">₹${selectedGuide.hourly_rate}/hour</div>
+              <p class="text-secondary">Package deals available:</p>
+              <ul style="margin-top: var(--space-8); margin-left: var(--space-20);">
+                <li>Half Day (4 hours): ₹${selectedGuide.hourly_rate * 4 * 0.9}</li>
+                <li>Full Day (8 hours): ₹${selectedGuide.hourly_rate * 8 * 0.85}</li>
+              </ul>
+            </div>
+          </div>
+          
+          <button class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: var(--space-24);" onclick="openBookingModal(${selectedGuide.id})">Book This Guide</button>
+          
+          <div>
+            <h3 style="margin-bottom: var(--space-16);">Reviews</h3>
+            ${selectedGuide.reviews.map(review => `
+              <div class="card" style="margin-bottom: var(--space-12); padding: var(--space-16);">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-8);">
+                  <strong>${review.name}</strong>
+                  <span class="stars">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</span>
+                </div>
+                <p class="text-secondary">${review.comment}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+      
+      navigateTo('guide-profile');
+    }
+
+    // Booking Modal
+    function openBookingModal(guideId) {
+      selectedGuide = guides.find(g => g.id === guideId);
+      currentBookingStep = 1;
+      document.getElementById('booking-modal').classList.add('active');
+      updateBookingStep();
+      calculatePrice();
+    }
+
+    function closeBookingModal() {
+      document.getElementById('booking-modal').classList.remove('active');
+      resetBookingForm();
+    }
+
+    function resetBookingForm() {
+      document.getElementById('booking-date').value = '';
+      document.getElementById('booking-duration').value = '2';
+      document.getElementById('booking-people').value = '1';
+      document.getElementById('booking-requirements').value = '';
+      document.getElementById('booking-name').value = '';
+      document.getElementById('booking-email').value = '';
+      document.getElementById('booking-phone').value = '';
+      document.getElementById('booking-nationality').value = '';
+      document.getElementById('booking-location').value = '';
+      selectedPaymentMethod = null;
+    }
+
+    function nextBookingStep() {
+      if (currentBookingStep === 1) {
+        if (!document.getElementById('booking-date').value) {
+          showToast('Please select a date', 'error');
+          return;
+        }
+      } else if (currentBookingStep === 2) {
+        if (!validatePersonalDetails()) {
+          return;
+        }
+      }
+      
+      currentBookingStep++;
+      updateBookingStep();
+      updatePaymentSummary();
+    }
+
+    function previousBookingStep() {
+      currentBookingStep--;
+      updateBookingStep();
+    }
+
+    function updateBookingStep() {
+      // Update step indicators
+      for (let i = 1; i <= 4; i++) {
+        const indicator = document.getElementById(`step-indicator-${i}`);
+        const content = document.getElementById(`booking-step-${i}`);
+        
+        indicator.classList.remove('active', 'completed');
+        content.classList.remove('active');
+        
+        if (i === currentBookingStep) {
+          indicator.classList.add('active');
+          content.classList.add('active');
+        } else if (i < currentBookingStep) {
+          indicator.classList.add('completed');
+        }
+      }
+      
+      // Update buttons
+      const backBtn = document.getElementById('modal-back-btn');
+      const nextBtn = document.getElementById('modal-next-btn');
+      const payBtn = document.getElementById('modal-pay-btn');
+      const doneBtn = document.getElementById('modal-done-btn');
+      
+      backBtn.style.display = currentBookingStep > 1 && currentBookingStep < 4 ? 'inline-flex' : 'none';
+      nextBtn.style.display = currentBookingStep < 3 ? 'inline-flex' : 'none';
+      payBtn.style.display = currentBookingStep === 3 ? 'inline-flex' : 'none';
+      doneBtn.style.display = currentBookingStep === 4 ? 'inline-flex' : 'none';
+    }
+
+    function validatePersonalDetails() {
+      const name = document.getElementById('booking-name').value;
+      const email = document.getElementById('booking-email').value;
+      const phone = document.getElementById('booking-phone').value;
+      const nationality = document.getElementById('booking-nationality').value;
+      const location = document.getElementById('booking-location').value;
+      
+      if (!name || !email || !phone || !nationality || !location) {
+        showToast('Please fill in all required fields', 'error');
+        return false;
+      }
+      
+      if (!email.includes('@')) {
+        showToast('Please enter a valid email', 'error');
+        return false;
+      }
+      
+      return true;
+    }
+
+    function calculatePrice() {
+      if (!selectedGuide) return;
+      
+      const duration = parseInt(document.getElementById('booking-duration').value) || 2;
+      const people = parseInt(document.getElementById('booking-people').value) || 1;
+      const rate = selectedGuide.hourly_rate;
+      
+      let discount = 1;
+      if (duration >= 8) discount = 0.85;
+      else if (duration >= 4) discount = 0.9;
+      
+      const total = Math.round(rate * duration * people * discount);
+      document.getElementById('price-estimate').textContent = `₹${total.toLocaleString()}`;
+    }
+
+    function updatePaymentSummary() {
+      if (!selectedGuide) return;
+      
+      const duration = parseInt(document.getElementById('booking-duration').value) || 2;
+      const people = parseInt(document.getElementById('booking-people').value) || 1;
+      const rate = selectedGuide.hourly_rate;
+      
+      let discount = 1;
+      if (duration >= 8) discount = 0.85;
+      else if (duration >= 4) discount = 0.9;
+      
+      const total = Math.round(rate * duration * people * discount);
+      
+      document.getElementById('payment-rate').textContent = `₹${rate}/hour`;
+      document.getElementById('payment-duration').textContent = `${duration} hours`;
+      document.getElementById('payment-people').textContent = people;
+      document.getElementById('payment-total').textContent = `₹${total.toLocaleString()}`;
+    }
+
+    function selectPayment(method) {
+      selectedPaymentMethod = method;
+      document.querySelectorAll('.payment-method').forEach(pm => {
+        pm.classList.remove('selected');
+      });
+      event.target.closest('.payment-method').classList.add('selected');
+    }
+
+    function processPayment() {
+      if (!selectedPaymentMethod) {
+        showToast('Please select a payment method', 'error');
+        return;
+      }
+      
+      // Show loading
+      const payBtn = document.getElementById('modal-pay-btn');
+      payBtn.textContent = 'Processing...';
+      payBtn.disabled = true;
+      
+      // Simulate payment processing
+      setTimeout(() => {
+        payBtn.textContent = 'Pay Now';
+        payBtn.disabled = false;
+        
+        // Create booking
+        const booking = createBooking();
+        bookings.push(booking);
+        
+        // Show confirmation
+        displayConfirmation(booking);
+        currentBookingStep = 4;
+        updateBookingStep();
+        
+        showToast('Payment successful! Booking confirmed.', 'success');
+      }, 2500);
+    }
+
+    function createBooking() {
+      const duration = parseInt(document.getElementById('booking-duration').value) || 2;
+      const people = parseInt(document.getElementById('booking-people').value) || 1;
+      const rate = selectedGuide.hourly_rate;
+      
+      let discount = 1;
+      if (duration >= 8) discount = 0.85;
+      else if (duration >= 4) discount = 0.9;
+      
+      const total = Math.round(rate * duration * people * discount);
+      
+      return {
+        id: `IND-BK-${Math.floor(Math.random() * 9000000) + 1000000}`,
+        guide: selectedGuide,
+        date: document.getElementById('booking-date').value,
+        duration: duration,
+        people: people,
+        total: total,
+        name: document.getElementById('booking-name').value,
+        email: document.getElementById('booking-email').value,
+        phone: document.getElementById('booking-phone').value,
+        location: document.getElementById('booking-location').value,
+        status: 'upcoming',
+        createdAt: new Date()
+      };
+    }
+
+    function displayConfirmation(booking) {
+      document.getElementById('booking-reference').textContent = booking.id;
+      document.getElementById('confirmation-guide').textContent = booking.guide.name;
+      document.getElementById('confirmation-date').textContent = new Date(booking.date).toLocaleDateString('en-IN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('confirmation-duration').textContent = `${booking.duration} hours`;
+      document.getElementById('confirmation-total').textContent = `₹${booking.total.toLocaleString()}`;
+      document.getElementById('confirmation-email').textContent = booking.email;
+    }
+
+    // Dashboard
+    function renderDashboard() {
+      const upcomingGrid = document.getElementById('upcoming-bookings-grid');
+      const pastGrid = document.getElementById('past-bookings-grid');
+      
+      const upcoming = bookings.filter(b => b.status === 'upcoming');
+      const past = bookings.filter(b => b.status === 'completed');
+      
+      if (upcoming.length === 0) {
+        upcomingGrid.innerHTML = '<p class="text-secondary">No upcoming bookings. <a href="#" onclick="navigateTo(\'guides\')">Browse guides</a> to book your tour!</p>';
+      } else {
+        upcomingGrid.innerHTML = upcoming.map(booking => `
+          <div class="booking-card">
+            <div class="booking-header">
+              <div>
+                <h3>${booking.guide.name}</h3>
+                <p class="text-secondary">${booking.guide.city}</p>
+              </div>
+              <span class="booking-status upcoming">Upcoming</span>
+            </div>
+            <div class="booking-detail">📅 ${new Date(booking.date).toLocaleDateString('en-IN', { weekday: 'short', month: 'short', day: 'numeric' })}</div>
+            <div class="booking-detail">⏱️ ${booking.duration} hours</div>
+            <div class="booking-detail">👥 ${booking.people} people</div>
+            <div class="booking-detail">📍 ${booking.location}</div>
+            <div class="booking-detail" style="font-weight: var(--font-weight-semibold); color: var(--color-primary); margin-top: var(--space-8);">₹${booking.total.toLocaleString()}</div>
+            <div style="margin-top: var(--space-16); font-size: var(--font-size-sm); color: var(--color-text-secondary);">Ref: ${booking.id}</div>
+          </div>
+        `).join('');
+      }
+      
+      if (past.length === 0) {
+        pastGrid.innerHTML = '<p class="text-secondary">No past bookings yet.</p>';
+      } else {
+        pastGrid.innerHTML = past.map(booking => `
+          <div class="booking-card">
+            <div class="booking-header">
+              <div>
+                <h3>${booking.guide.name}</h3>
+                <p class="text-secondary">${booking.guide.city}</p>
+              </div>
+              <span class="booking-status completed">Completed</span>
+            </div>
+            <div class="booking-detail">📅 ${new Date(booking.date).toLocaleDateString('en-IN')}</div>
+            <div class="booking-detail">⏱️ ${booking.duration} hours</div>
+            <div class="booking-detail" style="font-weight: var(--font-weight-semibold); margin-top: var(--space-8);">₹${booking.total.toLocaleString()}</div>
+            <button class="btn btn-secondary" style="width: 100%; margin-top: var(--space-16); font-size: var(--font-size-sm);">Leave Review</button>
+          </div>
+        `).join('');
+      }
+    }
+
+    // Translator
+    function translateText() {
+      const text = document.getElementById('translator-input').value.trim();
+      const lang = document.getElementById('translator-lang').value;
+      const resultDiv = document.getElementById('translation-result');
+      const textDiv = document.getElementById('translation-text');
+      
+      if (!text) {
+        showToast('Please enter text to translate', 'error');
+        return;
+      }
+      
+      // Check if we have a translation
+      if (translations[text] && translations[text][lang]) {
+        textDiv.textContent = translations[text][lang];
+        resultDiv.classList.remove('hidden');
+      } else {
+        textDiv.textContent = `Translation for "${text}" in selected language`;
+        resultDiv.classList.remove('hidden');
+        showToast('Translation displayed (simulated)', 'success');
+      }
+    }
+
+    function setPhrase(phrase) {
+      document.getElementById('translator-input').value = phrase;
+    }
+
+    // Tour Request
+    function showRequestTourModal() {
+      document.getElementById('tour-request-modal').classList.add('active');
+    }
+
+    function closeTourRequestModal() {
+      document.getElementById('tour-request-modal').classList.remove('active');
+    }
+
+    function submitTourRequest() {
+      const name = document.getElementById('tour-name').value;
+      const email = document.getElementById('tour-email').value;
+      
+      if (!name || !email) {
+        showToast('Please fill in name and email', 'error');
+        return;
+      }
+      
+      // Simulate submission
+      const refNumber = `IND-TR-${Math.floor(Math.random() * 9000000) + 1000000}`;
+      
+      showToast(`Request submitted! Reference: ${refNumber}`, 'success');
+      closeTourRequestModal();
+      
+      // Reset form
+      document.getElementById('tour-name').value = '';
+      document.getElementById('tour-email').value = '';
+      document.getElementById('tour-cities').value = '';
+      document.getElementById('tour-days').value = '3';
+      document.getElementById('tour-people').value = '2';
+      document.getElementById('tour-budget').value = '';
+      document.getElementById('tour-details').value = '';
+    }
+
+    // Toast Notification
+    function showToast(message, type = 'success') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = `toast ${type} show`;
+      
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 4000);
+    }
+
+    // Utility
+    function setMinDate() {
+      const dateInput = document.getElementById('booking-date');
+      if (dateInput) {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        dateInput.min = tomorrow.toISOString().split('T')[0];
+      }
+    }
+
+    // Initialize app
+    init();
+  </script>
+</body>
+</html>
